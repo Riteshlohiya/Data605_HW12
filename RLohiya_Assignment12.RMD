@@ -81,13 +81,13 @@ The 2nd model is better than the 1st model. The R^2 is .729, that means the expl
 
 3. Using the results from 3, forecast life expectancy when TotExp^.06 =1.5. Then forecast life expectancy when TotExp^.06=2.5.
 
-The equation:
+The equation: 
 
 y =  - 736527910 + 620060216*(x)
 
 ```{r}
 LE <- function(x)
-{y <- -736527910 + 620060216 *(x)
+{y <- -736527910 + 620060216 *(x) 
 y <- y^(1/4.6)
 y}
 LE(1.5)
